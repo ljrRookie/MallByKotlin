@@ -1,7 +1,6 @@
 package com.ljr.baselibrary.rx
 
-import com.kotlin.base.common.ResultCode
-import com.kotlin.base.rx.BaseException
+import com.ljr.baselibrary.common.ResultCode
 import com.ljr.baselibrary.data.protocol.BaseResp
 import rx.Observable
 import rx.functions.Func1

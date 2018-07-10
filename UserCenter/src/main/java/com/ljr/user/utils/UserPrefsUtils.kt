@@ -1,9 +1,10 @@
-package com.kotlin.user.utils
+package com.ljr.user.utils
 
-import com.kotlin.base.common.BaseConstant
-import com.kotlin.provider.common.ProviderConstant
-import com.kotlin.base.utils.AppPrefsUtils
-import com.kotlin.user.data.protocol.UserInfo
+
+import com.ljr.baselibrary.common.BaseConstant
+import com.ljr.baselibrary.utils.AppPrefsUtils
+import com.ljr.provider.common.ProviderConstant
+import com.ljr.user.data.protocol.UserInfo
 
 /*
     本地存储用户相关信息

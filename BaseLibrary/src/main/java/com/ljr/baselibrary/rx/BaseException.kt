@@ -1,4 +1,4 @@
-package com.kotlin.base.rx
+package com.ljr.baselibrary.rx
 
 /*
     定义通用异常

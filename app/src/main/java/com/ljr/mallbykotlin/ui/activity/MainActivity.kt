@@ -6,8 +6,10 @@ import android.support.v4.app.Fragment
 import com.ashokvarma.bottomnavigation.BottomNavigationBar
 import com.ljr.baselibrary.ui.activity.BaseActivity
 import com.ljr.baselibrary.ui.fragment.BaseFragment
+import com.ljr.goods.ui.fragment.CategoryFragment
 import com.ljr.mallbykotlin.R
 import com.ljr.mallbykotlin.ui.fragment.HomeFragment
+import com.ljr.mallbykotlin.ui.fragment.MeFragment
 import kotlinx.android.synthetic.main.activity_main.*
 
 import java.util.*
@@ -18,13 +20,13 @@ class MainActivity : BaseActivity() {
     //主界面Fragment
     private val mHomeFragment by lazy { HomeFragment() }
     //商品分类Fragment
-    private val mCategoryFragment by lazy { HomeFragment() }
+    private val mCategoryFragment by lazy { CategoryFragment() }
     //购物车Fragment
     private val mCartFragment by lazy { HomeFragment() }
     //消息Fragment
     private val mMsgFragment by lazy { HomeFragment() }
     //"我的"Fragment
-    private val mMeFragment by lazy { HomeFragment() }
+    private val mMeFragment by lazy { MeFragment() }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)

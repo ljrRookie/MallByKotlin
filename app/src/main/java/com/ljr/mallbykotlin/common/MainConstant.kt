@@ -1,6 +1,8 @@
-package com.kotlin.mall.common
+package com.ljr.mallbykotlin.common
 
-
+/**
+ * Created by user on 2018/7/6.
+ */
 /*
  * 首页Banner
  */
@@ -31,4 +33,3 @@ const val HOME_TOPIC_TWO = "https://timgsa.baidu.com/timg?image&quality=80&size=
 const val HOME_TOPIC_THREE = "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1502876222250&di=aa3290c84822ba5570f19cb76e1012af&imgtype=0&src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F0146d25768b5a10000018c1b00cf27.jpg%40900w_1l_2o_100sh.jpg"
 const val HOME_TOPIC_FOUR = "http://img.zcool.cn/community/01796c58772f66a801219c77e4fc04.png@1280w_1l_2o_100sh.png"
 const val HOME_TOPIC_FIVE = "http://img.zcool.cn/community/0154805791ffeb0000012e7edba495.jpg@900w_1l_2o_100sh.jpg"
-

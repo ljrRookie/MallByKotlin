@@ -2,17 +2,19 @@ package com.ljr.user.ui.activitys
 
 import android.os.Bundle
 import android.view.View
-import com.kotlin.user.data.protocol.UserInfo
-import com.kotlin.user.utils.UserPrefsUtils
+import com.alibaba.android.arouter.facade.annotation.Route
+import com.ljr.user.data.protocol.UserInfo
 import com.ljr.baselibrary.ext.enable
 import com.ljr.baselibrary.ext.onClick
 import com.ljr.baselibrary.presenter.view.BaseView
 import com.ljr.baselibrary.ui.activity.BaseMvpActivity
+import com.ljr.provider.router.RouterPath
 import com.ljr.user.R
 import com.ljr.user.injection.component.DaggerUserComponent
 import com.ljr.user.injection.module.UserModule
 import com.ljr.user.presenter.LoginPresenter
 import com.ljr.user.presenter.view.LoginView
+import com.ljr.user.utils.UserPrefsUtils
 import kotlinx.android.synthetic.main.activity_login.*
 import org.jetbrains.anko.startActivity
 import org.jetbrains.anko.toast
@@ -22,6 +24,7 @@ import org.jetbrains.anko.toast
  * Github：https://github.com/ljrRookie
  * Function ：
  */
+@Route(path = RouterPath.UserCenter.PATH_LOGIN)
 class LoginActivity: BaseMvpActivity<LoginPresenter>(),LoginView, View.OnClickListener {
     override fun onClick(v: View) {
         when(v.id){
@@ -38,7 +41,7 @@ class LoginActivity: BaseMvpActivity<LoginPresenter>(),LoginView, View.OnClickLi
     override fun onLoginResult(result: UserInfo) {
     toast("登录成功")
         UserPrefsUtils.putUserInfo(result)
-        startActivity<UserInfoActivity>()
+        //startActivity<UserInfoActivity>()
         finish()
     }
 

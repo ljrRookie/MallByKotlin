@@ -1,3 +1,5 @@
+@file:Suppress("DEPRECATED_JAVA_ANNOTATION")
+
 package com.ljr.baselibrary.injection
 
 import java.lang.annotation.Documented

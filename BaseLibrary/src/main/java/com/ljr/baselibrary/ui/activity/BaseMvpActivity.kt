@@ -1,12 +1,13 @@
 package com.ljr.baselibrary.ui.activity
 
 import android.os.Bundle
-import com.kotlin.base.presenter.BasePresenter
+import com.alibaba.android.arouter.launcher.ARouter
 import com.ljr.baselibrary.common.BaseApplication
 import com.ljr.baselibrary.injection.component.ActivityComponent
 import com.ljr.baselibrary.injection.component.DaggerActivityComponent
 import com.ljr.baselibrary.injection.module.ActivityModule
 import com.ljr.baselibrary.injection.module.LifecycleProviderModule
+import com.ljr.baselibrary.presenter.BasePresenter
 import com.ljr.baselibrary.presenter.view.BaseView
 import com.ljr.baselibrary.widgets.ProgressLoading
 import org.jetbrains.anko.toast
@@ -17,7 +18,7 @@ import javax.inject.Inject
  * Github：https://github.com/ljrRookie
  * Function ：Activity基类，业务相关
  */
-abstract open class BaseMvpActivity<T : BasePresenter<*>> : BaseActivity(), BaseView {
+abstract class BaseMvpActivity<T : BasePresenter<*>> : BaseActivity(), BaseView {
     @Inject
     lateinit var mPresenter: T
     lateinit var mActivityComponent: ActivityComponent
@@ -28,6 +29,8 @@ abstract open class BaseMvpActivity<T : BasePresenter<*>> : BaseActivity(), Base
         injectComponent()
 //初始化加载框
         mLoadingDialog = ProgressLoading.create(this)
+        //ARouter注册
+        ARouter.getInstance().inject(this)
 
     }
 

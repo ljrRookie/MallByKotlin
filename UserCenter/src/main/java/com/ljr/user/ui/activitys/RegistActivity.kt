@@ -22,8 +22,8 @@ class RegistActivity : BaseMvpActivity<RegisterPresenter>(),RegisterView,View.On
     }
 
 
-    override fun onRegisterResult(resule: String) {
-        toast(resule)
+    override fun onRegisterResult(result: String) {
+        toast(result)
         finish()
     }
 

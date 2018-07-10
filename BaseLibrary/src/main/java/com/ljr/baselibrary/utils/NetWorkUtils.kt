@@ -1,15 +1,18 @@
-package com.kotlin.base.utils
+package com.ljr.baselibrary.utils
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.net.ConnectivityManager
-import android.net.NetworkInfo
+
 
 /*
     网络工具
  */
+@SuppressLint("MissingPermission")
 object NetWorkUtils {
 
-    /*
+
+/*
         判断网络是否可用
      */
     fun isNetWorkAvailable(context: Context): Boolean {

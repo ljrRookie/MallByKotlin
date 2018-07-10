@@ -1,15 +1,11 @@
 package com.ljr.baselibrary.data.net
 
-import android.util.Log
-import com.kotlin.base.common.BaseConstant
-import com.kotlin.base.utils.AppPrefsUtils
+import com.ljr.baselibrary.common.BaseConstant
+import com.ljr.baselibrary.utils.AppPrefsUtils
 import com.ljr.baselibrary.utils.LogUtils
 import okhttp3.Interceptor
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
-import org.json.JSONArray
-import org.json.JSONException
-import org.json.JSONObject
 import retrofit2.Retrofit
 import retrofit2.adapter.rxjava.RxJavaCallAdapterFactory
 import retrofit2.converter.gson.GsonConverterFactory

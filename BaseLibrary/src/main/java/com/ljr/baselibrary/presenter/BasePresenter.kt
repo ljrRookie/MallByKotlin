@@ -1,9 +1,9 @@
-package com.kotlin.base.presenter
+package com.ljr.baselibrary.presenter
 
 import android.content.Context
-import com.kotlin.base.utils.NetWorkUtils
 import com.ljr.baselibrary.common.BaseApplication.Companion.context
 import com.ljr.baselibrary.presenter.view.BaseView
+import com.ljr.baselibrary.utils.NetWorkUtils
 import com.trello.rxlifecycle.LifecycleProvider
 import javax.inject.Inject
 

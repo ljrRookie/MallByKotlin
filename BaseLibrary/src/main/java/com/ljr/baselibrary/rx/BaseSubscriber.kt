@@ -1,6 +1,4 @@
 package com.ljr.baselibrary.rx
-
-import com.kotlin.base.rx.BaseException
 import com.ljr.baselibrary.presenter.view.BaseView
 import rx.Subscriber
 

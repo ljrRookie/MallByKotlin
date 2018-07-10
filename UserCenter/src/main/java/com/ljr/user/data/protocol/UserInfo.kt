@@ -1,4 +1,4 @@
-package com.kotlin.user.data.protocol
+package com.ljr.user.data.protocol
 
 /*
     用户实体类

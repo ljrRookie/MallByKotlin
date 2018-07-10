@@ -1,12 +1,12 @@
 package com.ljr.user.service.impl
 
 import android.util.Log
-import com.kotlin.base.rx.BaseException
-import com.kotlin.user.data.protocol.UserInfo
+
 import com.ljr.baselibrary.data.protocol.BaseResp
 import com.ljr.baselibrary.ext.convert
 import com.ljr.baselibrary.ext.convertBoolean
 import com.ljr.baselibrary.rx.BaseFuncBoolean
+import com.ljr.user.data.protocol.UserInfo
 import com.ljr.user.data.repository.UserRepository
 import com.ljr.user.service.UserService
 import rx.Observable

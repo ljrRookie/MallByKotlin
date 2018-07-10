@@ -1,5 +1,6 @@
-package com.kotlin.base.utils
+@file:Suppress("CAST_NEVER_SUCCEEDS")
 
+package com.ljr.baselibrary.utils
 import java.math.BigDecimal
 
 /*
@@ -109,7 +110,7 @@ object YuanFenConverter {
         val currency = amount.replace("\\$|\\¥|\\,".toRegex(), "")
         val index = currency.indexOf(".")
         val length = currency.length
-        var amLong: Long? = 0L
+        var amLong: Long?
         if (index == -1) {
             amLong = java.lang.Long.valueOf(currency + "00")
         } else if (length - index >= 3) {

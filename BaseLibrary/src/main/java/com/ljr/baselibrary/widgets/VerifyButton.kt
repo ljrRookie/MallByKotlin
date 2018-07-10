@@ -1,4 +1,4 @@
-package com.kotlin.base.widgets
+package com.ljr.baselibrary.widgets
 
 import android.content.Context
 import android.os.Handler
@@ -6,6 +6,7 @@ import android.util.AttributeSet
 import android.widget.Button
 import com.ljr.baselibrary.R
 
+@Suppress("DEPRECATION")
 /*
     获取验证码按钮
     带倒计时

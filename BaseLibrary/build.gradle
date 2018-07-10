@@ -51,7 +51,7 @@ dependencies {
     //Glide
     compile "com.github.bumptech.glide:glide:$glide_version"
     //Dagger2
-    compile "com.google.dagger:dagger:$dagger_version"
+    api "com.google.dagger:dagger:$dagger_version"
     kapt "com.google.dagger:dagger-compiler:$dagger_version"
     //Circle ImageView
     compile "de.hdodenhof:circleimageview:${circle_imageView_version}"
@@ -71,4 +71,8 @@ dependencies {
     compile 'com.github.shts:TriangleLabelView:1.1.2'
     //画廊
     compile 'com.github.crosswall:Android-Coverflow:release-v1.0.4'
+    //ARouter
+    compile "com.alibaba:arouter-api:$arouter_api_version"
+    //MulitStateView
+    compile "com.github.Kennyc1012:MultiStateView:$multi_state_view_version"
 }

@@ -11,13 +11,13 @@ import com.jph.takephoto.app.TakePhoto
 import com.jph.takephoto.app.TakePhotoImpl
 import com.jph.takephoto.compress.CompressConfig
 import com.jph.takephoto.model.TResult
-import com.kotlin.base.presenter.BasePresenter
 import com.kotlin.base.utils.DateUtils
 import com.ljr.baselibrary.common.BaseApplication
 import com.ljr.baselibrary.injection.component.ActivityComponent
 import com.ljr.baselibrary.injection.component.DaggerActivityComponent
 import com.ljr.baselibrary.injection.module.ActivityModule
 import com.ljr.baselibrary.injection.module.LifecycleProviderModule
+import com.ljr.baselibrary.presenter.BasePresenter
 import com.ljr.baselibrary.presenter.view.BaseView
 import com.ljr.baselibrary.widgets.ProgressLoading
 import org.jetbrains.anko.toast
@@ -29,7 +29,7 @@ import javax.inject.Inject
  * Github：https://github.com/ljrRookie
  * Function ：
  */
-abstract open class BaseTakePhotoActivity<T : BasePresenter<*>> : BaseActivity(), BaseView, TakePhoto.TakeResultListener {
+abstract class BaseTakePhotoActivity<T : BasePresenter<*>> : BaseActivity(), BaseView, TakePhoto.TakeResultListener {
     private lateinit var mTakePhoto: TakePhoto
 
     private lateinit var mTempFile: File
@@ -92,7 +92,7 @@ abstract open class BaseTakePhotoActivity<T : BasePresenter<*>> : BaseActivity()
       */
     protected fun showAlertView() {
         AlertView("选择图片", "", "取消", null, arrayOf("拍照", "相册"), this,
-                AlertView.Style.ActionSheet, OnItemClickListener { o, position ->
+                AlertView.Style.ActionSheet, OnItemClickListener { _, position ->
             mTakePhoto.onEnableCompress(CompressConfig.ofDefaultConfig(), false)
             when (position) {
                 0 -> {

@@ -10,6 +10,10 @@
       >
         <activity android:name=".ui.activitys.RegistActivity">
         </activity>
+        <activity android:name=".ui.activitys.LoginActivity"/>
+        <activity android:name=".ui.activitys.ForgetPwdActivity"/>
+        <activity android:name=".ui.activitys.ResetPwdActivity"/>
+        <activity android:name=".ui.activitys.UserInfoActivity"/>
     </application>
 
 </manifest>

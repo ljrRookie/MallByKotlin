@@ -1,9 +1,9 @@
-package com.l
+package com.ljr.user.presenter
 
-import com.kotlin.user.data.protocol.UserInfo
+import com.ljr.user.data.protocol.UserInfo
 import com.ljr.baselibrary.rx.BaseSubscriber
-import com.kotlin.base.presenter.BasePresenter
 import com.ljr.baselibrary.ext.execute
+import com.ljr.baselibrary.presenter.BasePresenter
 import com.ljr.user.presenter.view.UserInfoView
 import com.ljr.user.service.UploadService
 import com.ljr.user.service.UserService
@@ -14,7 +14,7 @@ import javax.inject.Inject
  * Github：https://github.com/ljrRookie
  * Function ：编辑用户资料
  */
-class UserInfoPresenter @Inject constructor() :BasePresenter<UserInfoView>(){
+class UserInfoPresenter @Inject constructor() : BasePresenter<UserInfoView>(){
     @Inject
     lateinit var userService: UserService
     @Inject

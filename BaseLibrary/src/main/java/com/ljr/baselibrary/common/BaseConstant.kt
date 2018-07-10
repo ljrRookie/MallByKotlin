@@ -1,4 +1,4 @@
-package com.kotlin.base.common
+package com.ljr.baselibrary.common
 
 /*
     基础常量

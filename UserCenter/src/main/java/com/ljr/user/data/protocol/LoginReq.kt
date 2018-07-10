@@ -1,5 +1,4 @@
-package com.kotlin.user.data.protocol
-
+package com.ljr.user.data.protocol
 /*
     登录请求体
  */

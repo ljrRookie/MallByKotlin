@@ -1,28 +1,23 @@
 package com.ljr.user.ui.activitys
 
 import android.os.Bundle
-import android.util.Log
 import com.jph.takephoto.model.TResult
-import com.kotlin.base.common.BaseConstant
-import com.kotlin.base.utils.AppPrefsUtils
-import com.kotlin.base.utils.GlideUtils
-import com.kotlin.provider.common.ProviderConstant
-import com.kotlin.user.data.protocol.UserInfo
-import com.kotlin.user.utils.UserPrefsUtils
-import com.l.UserInfoPresenter
+import com.ljr.baselibrary.common.BaseConstant
+import com.ljr.baselibrary.utils.AppPrefsUtils
+import com.ljr.user.utils.UserPrefsUtils
 import com.ljr.baselibrary.ext.onClick
-import com.ljr.baselibrary.ui.activity.BaseMvpActivity
 import com.ljr.baselibrary.ui.activity.BaseTakePhotoActivity
+import com.ljr.baselibrary.utils.GlideUtils
+import com.ljr.provider.common.ProviderConstant
 import com.ljr.user.R
+import com.ljr.user.data.protocol.UserInfo
 import com.ljr.user.injection.component.DaggerUserComponent
 import com.ljr.user.injection.module.UserModule
+import com.ljr.user.presenter.UserInfoPresenter
 import com.ljr.user.presenter.view.UserInfoView
-import com.qiniu.android.http.ResponseInfo
-import com.qiniu.android.storage.UpCompletionHandler
 import com.qiniu.android.storage.UploadManager
 import kotlinx.android.synthetic.main.activity_user_info.*
 import org.jetbrains.anko.toast
-import org.json.JSONObject
 
 /**
  * Created by 林佳荣 on 2018/6/20.
@@ -42,7 +37,7 @@ class UserInfoActivity : BaseTakePhotoActivity<UserInfoPresenter>(), UserInfoVie
     private val mUploadManager: UploadManager by lazy { UploadManager() }
 
     override fun onGetUploadTokenResult(result: String) {
-        mUploadManager.put(mLocalFileUrl, null, result, { key, info, response ->
+        mUploadManager.put(mLocalFileUrl, null, result, { _, _, response ->
             mRemoteFileUrl = BaseConstant.IMAGE_SERVER_ADDRESS + response?.get("hash")
             GlideUtils.loadUrlImage(this@UserInfoActivity, mRemoteFileUrl!!, mUserIconIv)
         }, null)

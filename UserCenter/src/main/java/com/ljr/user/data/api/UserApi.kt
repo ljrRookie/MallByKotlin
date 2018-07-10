@@ -1,8 +1,7 @@
 package com.ljr.user.data.api
 
-import com.kotlin.user.data.protocol.*
 import com.ljr.baselibrary.data.protocol.BaseResp
-import com.ljr.user.data.protocol.RegisterReq
+import com.ljr.user.data.protocol.*
 import retrofit2.http.Body
 import retrofit2.http.POST
 import rx.Observable

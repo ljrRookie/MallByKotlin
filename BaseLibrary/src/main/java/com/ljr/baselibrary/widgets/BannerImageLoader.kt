@@ -1,8 +1,8 @@
-package com.kotlin.base.widgets
+package com.ljr.baselibrary.widgets
 
 import android.content.Context
 import android.widget.ImageView
-import com.kotlin.base.utils.GlideUtils
+import com.ljr.baselibrary.utils.GlideUtils
 import com.youth.banner.loader.ImageLoader
 
 /*

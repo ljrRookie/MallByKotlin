@@ -1,8 +1,8 @@
 package com.ljr.user.presenter
 
-import com.kotlin.base.presenter.BasePresenter
-import com.kotlin.user.data.protocol.UserInfo
+import com.ljr.user.data.protocol.UserInfo
 import com.ljr.baselibrary.ext.execute
+import com.ljr.baselibrary.presenter.BasePresenter
 import com.ljr.baselibrary.rx.BaseSubscriber
 import com.ljr.user.presenter.view.LoginView
 import com.ljr.user.service.UserService

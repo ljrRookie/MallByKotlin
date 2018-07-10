@@ -1,9 +1,11 @@
+@file:Suppress("DEPRECATED_JAVA_ANNOTATION")
+
 package com.ljr.baselibrary.injection
 
 import java.lang.annotation.Documented
 import java.lang.annotation.Retention
+import java.lang.annotation.RetentionPolicy
 import javax.inject.Scope
-import java.lang.annotation.RetentionPolicy.RUNTIME
 /**
  * Created by 林佳荣 on 2018/6/15.
  * Github：https://github.com/ljrRookie
@@ -11,5 +13,5 @@ import java.lang.annotation.RetentionPolicy.RUNTIME
  */
 @Scope
 @Documented
-@Retention(RUNTIME)
+@Retention(RetentionPolicy.RUNTIME)
 annotation class ActivityScope

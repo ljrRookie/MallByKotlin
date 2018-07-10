@@ -1,10 +1,9 @@
 package com.ljr.user.data.repository
 
-import com.kotlin.user.data.protocol.*
 import com.ljr.baselibrary.data.net.RetrofitFactory
 import com.ljr.baselibrary.data.protocol.BaseResp
 import com.ljr.user.data.api.UserApi
-import com.ljr.user.data.protocol.RegisterReq
+import com.ljr.user.data.protocol.*
 import rx.Observable
 import javax.inject.Inject
 

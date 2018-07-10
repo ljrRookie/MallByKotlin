@@ -1,4 +1,4 @@
-package com.kotlin.provider.common
+package com.ljr.provider.common
 
 /*
     业务常量

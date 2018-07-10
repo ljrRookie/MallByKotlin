@@ -1,6 +1,6 @@
 package com.ljr.user.presenter.view
 
-import com.kotlin.user.data.protocol.UserInfo
+import com.ljr.user.data.protocol.UserInfo
 import com.ljr.baselibrary.presenter.view.BaseView
 
 /*

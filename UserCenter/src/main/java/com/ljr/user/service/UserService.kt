@@ -1,6 +1,6 @@
 package com.ljr.user.service
 
-import com.kotlin.user.data.protocol.UserInfo
+import com.ljr.user.data.protocol.UserInfo
 import rx.Observable
 
 /**

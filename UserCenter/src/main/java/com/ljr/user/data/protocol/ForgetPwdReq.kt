@@ -1,5 +1,4 @@
-package com.kotlin.user.data.protocol
-
+package com.ljr.user.data.protocol
 /*
     忘记密码请求体
  */

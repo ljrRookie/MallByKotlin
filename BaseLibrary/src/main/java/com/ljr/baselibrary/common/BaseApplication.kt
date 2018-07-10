@@ -1,7 +1,9 @@
 package com.ljr.baselibrary.common
 
+import android.annotation.SuppressLint
 import android.app.Application
 import android.content.Context
+import com.alibaba.android.arouter.launcher.ARouter
 import com.ljr.baselibrary.injection.component.AppComponent
 import com.ljr.baselibrary.injection.component.DaggerAppComponent
 import com.ljr.baselibrary.injection.module.AppModule
@@ -17,6 +19,10 @@ class BaseApplication :Application(){
         super.onCreate()
         context = this
         initAppInjection()
+        //ARouter初始化
+        ARouter.openLog()
+        ARouter.openDebug()
+        ARouter.init(this)
     }
 
     private fun initAppInjection() {

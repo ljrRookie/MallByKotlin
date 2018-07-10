@@ -1,10 +1,10 @@
-package com.kotlin.base.utils
+package com.ljr.baselibrary.utils
 
 import android.content.Context
 import android.content.SharedPreferences
 import android.content.SharedPreferences.Editor
-import com.kotlin.base.common.BaseConstant
 import com.ljr.baselibrary.common.BaseApplication
+import com.ljr.baselibrary.common.BaseConstant
 
 
 /*

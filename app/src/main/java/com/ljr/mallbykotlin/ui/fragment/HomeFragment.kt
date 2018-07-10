@@ -5,10 +5,10 @@ import android.support.v7.widget.LinearLayoutManager
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.kotlin.base.widgets.BannerImageLoader
-import com.kotlin.mall.common.*
+import com.ljr.mallbykotlin.common.*
 import com.ljr.baselibrary.ext.onClick
 import com.ljr.baselibrary.ui.fragment.BaseFragment
+import com.ljr.baselibrary.widgets.BannerImageLoader
 import com.ljr.mallbykotlin.R
 import com.ljr.mallbykotlin.ui.adapter.HomeDiscountAdapter
 import com.ljr.mallbykotlin.ui.adapter.TopicAdapter
@@ -17,7 +17,6 @@ import com.youth.banner.Transformer
 import kotlinx.android.synthetic.main.fragment_home.*
 import me.crosswall.lib.coverflow.CoverFlow
 import org.jetbrains.anko.support.v4.toast
-import org.jetbrains.anko.toast
 
 /**
  * Created by 林佳荣 on 2018/6/20.
